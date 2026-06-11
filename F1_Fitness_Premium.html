@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 FITNESS | Luxury Gym in Nautan Bazar</title>
+<meta name="description" content="F1 Fitness Nautan Bazar - Premium Gym, Personal Training, Nutrition Guidance.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,sans-serif;background:#0b0b0b;color:white;line-height:1.6}
+header{position:fixed;width:100%;top:0;background:rgba(0,0,0,.85);padding:15px 5%;z-index:99}
+nav{display:flex;justify-content:space-between}
+nav a{color:gold;text-decoration:none;margin-left:15px}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;background-position:center}
+.hero h1{font-size:3rem}
+.btn{display:inline-block;background:gold;color:black;padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:15px}
+section{padding:80px 8%}
+h2{color:gold;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#171717;padding:20px;border-radius:15px;transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.gallery img{width:100%;border-radius:15px}
+.price{font-size:3rem;color:gold}
+.contact input,.contact textarea{width:100%;padding:12px;margin:8px 0;border:none;border-radius:8px}
+footer{text-align:center;padding:30px;background:#111}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:15px;border-radius:50%;text-decoration:none;font-size:24px}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>F1 FITNESS</h2>
+<div>
+<a href="#about">About</a>
+<a href="#plans">Plans</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Transform Your Body, Transform Your Life</h1>
+<p>Luxury Fitness Experience in Nautan Bazar</p>
+<a class="btn" href="#contact">Join Now</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About F1 Fitness</h2>
+<p>Owner Pradeep ke leadership mein F1 Fitness Nautan Bazar ka premium gym hai. Yahan modern training, nutrition guidance aur personal coaching available hai.</p>
+</section>
+
+<section>
+<h2>Why Choose Us?</h2>
+<div class="grid">
+<div class="card">🏆 8+ Years Trainer Experience</div>
+<div class="card">💪 Personal Training</div>
+<div class="card">🥗 Nutrition Guidance</div>
+<div class="card">👨‍🦱 Male & Female Friendly</div>
+</div>
+</section>
+
+<section id="plans">
+<h2>Membership Plan</h2>
+<div class="card">
+<div class="price">₹499</div>
+<p>Monthly Membership</p>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="grid">
+<div class="card">Weight Training</div>
+<div class="card">Muscle Building</div>
+<div class="card">Fat Loss Programs</div>
+<div class="card">Personal Coaching</div>
+<div class="card">Strength Training</div>
+<div class="card">Diet Planning</div>
+</div>
+</section>
+
+<section>
+<h2>BMI Calculator</h2>
+<input id="w" placeholder="Weight (kg)">
+<input id="h" placeholder="Height (cm)">
+<button class="btn" onclick="bmi()">Calculate BMI</button>
+<p id="result"></p>
+</section>
+
+<section class="gallery">
+<h2>Gym Gallery</h2>
+<div class="grid">
+<img src="https://picsum.photos/500/300?1">
+<img src="https://picsum.photos/500/300?2">
+<img src="https://picsum.photos/500/300?3">
+</div>
+</section>
+
+<section>
+<h2>Timings</h2>
+<p>🌅 Morning: 4:00 AM - 8:00 AM</p>
+<p>🌇 Evening: 4:00 PM - 8:00 PM</p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📞 77630 26462</p>
+<p>📸 Instagram: @fannapradeep</p>
+<input placeholder="Your Name">
+<input placeholder="Phone Number">
+<textarea placeholder="Message"></textarea>
+<a class="btn" href="https://wa.me/917763026462">WhatsApp Now</a>
+</section>
+
+<footer>
+<p>© 2026 F1 FITNESS | Nautan Bazar | Owner: Pradeep</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917763026462">💬</a>
+
+<script>
+function bmi(){
+let w=parseFloat(document.getElementById('w').value);
+let h=parseFloat(document.getElementById('h').value)/100;
+let b=w/(h*h);
+document.getElementById('result').innerText="Your BMI: "+b.toFixed(1);
+}
+</script>
+</body>
+</html>
